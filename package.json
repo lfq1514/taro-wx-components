@@ -1,8 +1,9 @@
 {
-  "name": "myApp",
-  "version": "1.0.0",
-  "private": true,
+  "name": "qy-taro-components",
+  "version": "1.0.1",
+  "private": false,
   "description": "基于taro的组件库",
+  "main": "./lib/index.js",
   "templateInfo": {
     "name": "redux",
     "typescript": true,

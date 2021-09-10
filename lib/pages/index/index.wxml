@@ -1,6 +1,7 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="index">
-        <view><text>Hello, World</text>
+        <view><text>Hello, World1</text>
+            <tutton></tutton>
         </view>
     </view>
 </block>

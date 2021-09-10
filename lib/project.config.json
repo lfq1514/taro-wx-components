@@ -1,5 +1,5 @@
 {
-  "miniprogramRoot": "dist/",
+  "miniprogramRoot": "./",
   "projectname": "taro-ui-components",
   "description": "基于taro的组件库",
   "appid": "wxe8244d05e89ab6b8",

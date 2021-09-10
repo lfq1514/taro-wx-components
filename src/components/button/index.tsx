@@ -7,9 +7,6 @@ import { add, minus, asyncAdd } from '../../actions/counter'
 
 import './index.less'
 
-
-import Tutton from '../../components/button'
-
 // #region 书写注意
 //
 // 目前 typescript 版本还无法在装饰器模式下将 Props 注入到 Taro.Component 中的 props 属性
@@ -56,35 +53,16 @@ interface Index {
   }
 }))
 class Index extends Component {
-
-    /**
-   * 指定config的类型声明为: Taro.Config
-   *
-   * 由于 typescript 对于 object 类型推导只能推出 Key 的基本类型
-   * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string
-   * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
-   */
-    config: Config = {
-    navigationBarTitleText: '首页'
-  }
-
   componentWillReceiveProps (nextProps) {
     console.log(this.props, nextProps)
   }
-
   componentWillUnmount () { }
-
   componentDidShow () { }
-
   componentDidHide () { }
-
   render () {
     return (
       <View className='index'>
-        <View>
-          <Text>Hello, World1</Text>
-          <Tutton/>
-          </View>
+        <View className='buttonArea'>button</View>
       </View>
     )
   }

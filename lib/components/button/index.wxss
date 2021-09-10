@@ -1,0 +1,1 @@
+.index{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%}.index .buttonArea{width:200rpx;height:60rpx;border-radius:30rpx;border:1rpx solid #ccc;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
