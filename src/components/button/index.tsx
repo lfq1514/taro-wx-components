@@ -65,7 +65,7 @@ class Index extends Component {
         <View className='buttonArea'>button</View>
       </View>
     )
-  }
+
 }
 
 // #region 导出注意

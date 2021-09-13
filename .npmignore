@@ -1,6 +1,8 @@
-node_modules/**
-src/**
-config/**
-lib/
+# node_modules/**
+# src/**
+# config/**
+# gulpfile.js
+# package-lock.json
+
 
 

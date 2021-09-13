@@ -8,7 +8,7 @@ import { add, minus, asyncAdd } from '../../actions/counter'
 import './index.less'
 
 
-import Tutton from '../../components/button'
+import TYButton from '../../components/button'
 
 // #region 书写注意
 //
@@ -82,8 +82,7 @@ class Index extends Component {
     return (
       <View className='index'>
         <View>
-          <Text>Hello, World1</Text>
-          <Tutton/>
+          <TYButton/>
           </View>
       </View>
     )
