@@ -1,3 +1,4 @@
+const path=require('path')
 const config = {
   projectName: 'myApp',
   date: '2021-9-8',
@@ -9,6 +10,11 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'lib',
+  alias: {
+    '@/types': path.resolve(__dirname, '..', 'types'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/assets/img': path.resolve(__dirname, '..', 'src/assets/img')
+  },
   babel: {
     sourceMap: true,
     presets: [
@@ -53,12 +59,12 @@ const config = {
 
         }
       },
-      url: {
-        enable: true,
-        config: {
-          limit: 10240 // 设定转换尺寸上限
-        }
-      },
+      // url: {
+      //   enable: true,
+      //   config: {
+      //     limit: 10240 // 设定转换尺寸上限
+      //   }
+      // },
       cssModules: {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {

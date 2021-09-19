@@ -26,7 +26,10 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/baseComponentList/index',
+      'pages/businessComponentList/index',
+      'pages/visualComponentList/index',
     ],
     window: {
       backgroundTextStyle: 'light',

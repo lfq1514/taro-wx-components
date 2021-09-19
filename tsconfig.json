@@ -13,7 +13,6 @@
     "noUnusedParameters": true,
     "strictNullChecks": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "rootDir": ".",
     "jsx": "preserve",
     "jsxFactory": "Taro.createElement",
@@ -21,11 +20,16 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "baseUrl":".",
+    "paths": {
+      "@/components/*":["./src/components/*"],
+      "@/assets/img/*":["./src/assets/img/*"],
+    }
   },
   "exclude": [
     "node_modules",
-    "dist"
+    "lib"
   ],
   "compileOnSave": false
 }
