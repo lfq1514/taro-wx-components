@@ -1,1 +1,1 @@
-export {default as QYButton } from '@/components/button'
+export { default as QYButton } from '@/components/button';
