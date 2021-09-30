@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "基础组件页面",
+          "pathName": "pages/baseComponentList/index",
+          "query": "__key_=16329687286841",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

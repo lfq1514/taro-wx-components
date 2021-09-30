@@ -1,5 +1,3 @@
-import tuyalogo from './tuyalogo.webp'
+import tuyalogo from './tylogo.png';
 
-export {
-  tuyalogo
-}
+export { tuyalogo };

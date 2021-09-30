@@ -1,19 +1,26 @@
-import Taro, { Component } from "@tarojs/taro";
-import { View } from "@tarojs/components";
-import "./index.less";
+import Taro, { Component } from '@tarojs/taro';
+import { View } from '@tarojs/components';
+import classNames from 'classnames';
+import './index.less';
 
-import { TYButtonProps } from "types/button";
-class Index extends Component<TYButtonProps> {
+import { QYButtonProps } from 'types/button';
+class Index extends Component<QYButtonProps> {
+  static defaultProps = {
+    circle: false,
+    customStyle: {},
+    onClick: () => {},
+  };
   render() {
-    const { btnText, circle, style } = this.props;
+    const { circle, customStyle, size, onClick } = this.props;
+    const btnClass = classNames({
+      index: true,
+      circleStyle: circle,
+      'ty-button--small': size === 'small',
+      'ty-button-circle--small': size === 'small',
+    });
     return (
-      <View className="index">
-        <View
-          className={["buttonArea", circle&&"circleStyle"].filter(i=>i).join(" ")}
-          style={style}
-        >
-          {this.props.children?this.props.children:btnText}
-        </View>
+      <View className={btnClass} style={customStyle} onClick={onClick}>
+        {this.props.children}
       </View>
     );
   }

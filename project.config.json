@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "lib/",
-  "projectname": "taro-ui-components",
+  "projectname": "ty-ka-wx-components",
   "description": "基于taro的组件库",
   "appid": "wxe8244d05e89ab6b8",
   "setting": {

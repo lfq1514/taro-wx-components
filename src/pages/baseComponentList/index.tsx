@@ -1,43 +1,40 @@
-import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Button, Text } from '@tarojs/components'
-
-import TYButton from '@/components/button'
-import './index.less'
-
+import Taro, { Component, Config } from '@tarojs/taro';
+import { ScrollView, View, Text } from '@tarojs/components';
+import config from './config';
+import './index.less';
 class Index extends Component {
-
-    /**
-   * 指定config的类型声明为: Taro.Config
-   *
-   * 由于 typescript 对于 object 类型推导只能推出 Key 的基本类型
-   * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string
-   * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
-   */
-    config: Config = {
-    navigationBarTitleText: '基础组件'
-  }
-
-  componentWillReceiveProps (nextProps) {
-    console.log(this.props, nextProps)
-  }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
-  render () {
+  config: Config = {
+    navigationBarTitleText: '基础组件',
+  };
+  componentDidHide() {}
+  toPages = (page) => {
+    console.log('page', page);
+    Taro.navigateTo({
+      url: page,
+    });
+  };
+  render() {
     return (
-      <View className='index'>
-        <View>
-          <TYButton btnText='button' circle>
-            <Text>hello button</Text>
-          </TYButton>
-          </View>
-      </View>
-    )
+      <ScrollView className="scrollPage" scrollY>
+        <View className="index">
+          {config.map((page, index) => {
+            return (
+              <View
+                key={index}
+                className="itemBox"
+                onClick={() => {
+                  this.toPages(page.page);
+                }}
+              >
+                <Text>{page.title}</Text>
+                <Text>&gt;</Text>
+              </View>
+            );
+          })}
+        </View>
+      </ScrollView>
+    );
   }
 }
 
-export default Index
+export default Index;

@@ -1,8 +1,30 @@
-.index {
-  flex-direction: column;
-  width: 100%;
-  .btn {
-    background: red;
+@import url('../../assets/css/common.less');
+page {
+  height: 100%;
+  .scrollPage {
+    height: 100%;
+    // padding-bottom: 100px;
   }
-
+  .index {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: @themebackgroundcolor_fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .itemBox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      width: 90%;
+      background: @themebackgroundcolor_fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: @boxshadow;
+    }
+  }
 }

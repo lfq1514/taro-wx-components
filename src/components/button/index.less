@@ -1,17 +1,23 @@
 @import url('../../assets/css/common.less');
+
 .index {
-  flex-direction: column;
-  width: 100%;
-  .buttonArea {
-    width: 200px;
-    height: 60px;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: @themeFontSize;
-  }
-  .circleStyle {
-    border-radius: 30px;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 200px;
+  height: 60px;
+  border: 1px solid #ccc;
+  font-size: @themeFontSize;
+}
+.circleStyle {
+  border-radius: 60px;
+}
+.ty-button--small {
+  width: 150px;
+  height: 45px;
+}
+.ty-button-circle--small {
+  border-radius: 60px;
 }

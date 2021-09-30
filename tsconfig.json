@@ -18,18 +18,14 @@
     "jsxFactory": "Taro.createElement",
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "baseUrl":".",
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": ".",
     "paths": {
-      "@/components/*":["./src/components/*"],
-      "@/assets/img/*":["./src/assets/img/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/assets/img/*": ["./src/assets/img/*"],
+      "@/types/*": ["./types/*"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "lib"
-  ],
+  "exclude": ["node_modules", "lib"],
   "compileOnSave": false
 }

@@ -14,7 +14,6 @@ import './app.less';
 // }
 
 const store = configStore();
-
 class App extends Component {
   /**
    * 指定config的类型声明为: Taro.Config
@@ -26,7 +25,12 @@ class App extends Component {
   config: Config = {
     pages: [
       'pages/index/index',
+
       'pages/baseComponentList/index',
+      'pages/baseComponentList/buttonView/index',
+      'pages/baseComponentList/alertView/index',
+      'pages/baseComponentList/switchView/index',
+
       'pages/businessComponentList/index',
       'pages/visualComponentList/index',
     ],
